@@ -3,32 +3,7 @@
 {set $template = 'template_url'|config}
 {include 'file:chunks/head.tpl'}
 <body>
-<link rel="stylesheet" href="./css/latofonts.css">
-
-<!-- Навигация -->
-<nav>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-sm-6 col-md-8 leftSide">
-                <a href="./index.html" class="logo"></a>
-
-                <ul class="menu">
-                    <li><a href="#works" data-toggle="smoothScroll">Наши работы</a></li>
-                    <li><a href="#aboutus" data-toggle="smoothScroll">О нас</a></li>
-                    <li><a href="#prices" data-toggle="smoothScroll">Цены</a></li>
-                    <li><a href="#contacts" data-toggle="smoothScroll">Контакты</a></li>
-                </ul>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 rightSide">
-                <a href="tel:+79149166845" class="contactPhone">
-                    <i class="tel-icon"></i> +7 (914) 916-68-45
-                </a>
-                <button type="button" class="menuToggle" onclick="return $('nav').toggleClass('active');"></button>
-            </div>
-        </div>
-    </div>
-</nav>
-<!-- //Навигация -->
+{include 'file:chunks/menu.tpl'}
 
 <!-- Контент -->
 {include 'file:chunks/header.tpl'}
@@ -175,25 +150,7 @@
 </section>
 <!-- //Контент -->
 
-<!-- Футер -->
-<footer>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-3">
-                <div class="logo"></div>
-            </div>
-            <div class="col-12 col-lg-6 cpr">
-                <p>IMSKAI Technologies, Vladivostok, 2018</p>
-            </div>
-            <div class="col-12 col-lg-3 sLinks">
-                <a href="#" class="social-link facebook"></a>
-                <a href="#" class="social-link instagram"></a>
-            </div>
-        </div>
-    </div>
-</footer>
-<!-- /Футер -->
-
+{include 'file:chunks/footer.tpl'}
 {include 'file:chunks/scripts.tpl'}
 </body>
 </html>

@@ -22,4 +22,6 @@
     <link rel="stylesheet" href="{$template}css/owl.carousel.min.css">
     <link rel="stylesheet" href="{$template}css/owl.theme.default.min.css">
     <link rel="stylesheet" href="{$template}css/styles.css">
+    <link rel="stylesheet" href="{$template}css/latofonts.css">
+
 </head>
