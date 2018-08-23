@@ -72,80 +72,16 @@
     <h3 class="sectionTitle size-2">Другие наши работы</h3>
 
     <div class="owl-carousel otherWorks">
-        <div class="item">
-            <img src="./images/works-min/1.jpg" alt="SVDetailing - Корпоративный сайт-каталог" class="bg">
 
-            <p class="category corp-site">Корпоративный сайт-каталог</p>
+        {'!pdoResources'|snippet:[
+        'parents' => '3',
+        'resources' => '{$id}'
+        'hideContainers' => '1',
+        'limit' => '10',
+        'includeTVs' => 'image',
+        'tpl' => '@FILE chunks/work_item.tpl'
+        ]}
 
-            <div class="action-content">
-                <div class="inner">
-                    <p class="title">SVDetailing</p>
-                    <p class="desc">Студия детейлинга по обслуживанию всех типов автомобилей.</p>
-
-                </div>
-                <p class="category corp-site">Корпоративный сайт</p>
-            </div>
-        </div>
-
-        <div class="item">
-            <img src="./images/works-min/1.jpg" alt="SVDetailing - Корпоративный сайт-каталог" class="bg">
-
-            <p class="category corp-site">Корпоративный сайт-каталог</p>
-
-            <div class="action-content">
-                <div class="inner">
-                    <p class="title">SVDetailing</p>
-                    <p class="desc">Студия детейлинга по обслуживанию всех типов автомобилей.</p>
-
-                </div>
-                <p class="category corp-site">Корпоративный сайт</p>
-            </div>
-        </div>
-
-        <div class="item">
-            <img src="./images/works-min/1.jpg" alt="SVDetailing - Корпоративный сайт-каталог" class="bg">
-
-            <p class="category corp-site">Корпоративный сайт-каталог</p>
-
-            <div class="action-content">
-                <div class="inner">
-                    <p class="title">SVDetailing</p>
-                    <p class="desc">Студия детейлинга по обслуживанию всех типов автомобилей.</p>
-
-                </div>
-                <p class="category corp-site">Корпоративный сайт</p>
-            </div>
-        </div>
-
-        <div class="item">
-            <img src="./images/works-min/1.jpg" alt="SVDetailing - Корпоративный сайт-каталог" class="bg">
-
-            <p class="category corp-site">Корпоративный сайт-каталог</p>
-
-            <div class="action-content">
-                <div class="inner">
-                    <p class="title">SVDetailing</p>
-                    <p class="desc">Студия детейлинга по обслуживанию всех типов автомобилей.</p>
-
-                </div>
-                <p class="category corp-site">Корпоративный сайт</p>
-            </div>
-        </div>
-
-        <div class="item">
-            <img src="./images/works-min/1.jpg" alt="SVDetailing - Корпоративный сайт-каталог" class="bg">
-
-            <p class="category corp-site">Корпоративный сайт-каталог</p>
-
-            <div class="action-content">
-                <div class="inner">
-                    <p class="title">SVDetailing</p>
-                    <p class="desc">Студия детейлинга по обслуживанию всех типов автомобилей.</p>
-
-                </div>
-                <p class="category corp-site">Корпоративный сайт</p>
-            </div>
-        </div>
     </div>
 </section>
 <!-- //Контент -->
