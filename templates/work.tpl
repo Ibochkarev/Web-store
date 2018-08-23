@@ -12,10 +12,16 @@
     <div class="container">
         <div class="portfolio-desc">
             <div class="left">
-                <p class="category">Корпоративный сайт</p>
+                <p class="category">
+                    {'!pdoField'|snippet:[
+                    'id' => $id,
+                    'field' => 'pagetitle',
+                    'top' => '1'
+                    ]}
+                </p>
                 <p class="website">
                     Адрес сайта
-                    <a href="https://svdetailing.ru" target="_blank">https://svdetailing.ru</a>
+                    <a href="{$_modx->resource.www_link}" target="_blank">{$_modx->resource.www_link}</a>
                 </p>
                 <div class="project-stats">
                     <p>Статистика проекта</p>
@@ -28,20 +34,17 @@
             <div class="right">
                 <p class="title">Задача</p>
                 <p class="desc">
-                    Выполнить дизайн нескольких страниц, с отражением стиля
-                    и дороговизны компании. Наглядно продемонстрировать разделы услуг,
-                    и сделать так, чтобы пользователи могли в них легко разобраться
-                    и захотели сделать заказ.
+                    {$_modx->resource.project_task}
                 </p>
 
                 <p class="title">Цель сайта</p>
                 <p class="desc">
-                    Совершение пользователем заказа на услуги компании.
+                    {$_modx->resource.project_target}
                 </p>
 
                 <p class="title">Целевая аудитория</p>
                 <p class="desc">
-                    Мужчины и женщины от 30 до 60 лет, с уровнем дохода выше среднего.
+                    {$_modx->resource.project_audience}
                 </p>
             </div>
         </div>
@@ -75,7 +78,7 @@
 
         {'!pdoResources'|snippet:[
         'parents' => '3',
-        'resources' => '{$id}'
+        'resources' => '-{$id}'
         'hideContainers' => '1',
         'limit' => '10',
         'includeTVs' => 'image',
