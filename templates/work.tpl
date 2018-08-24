@@ -52,22 +52,18 @@
         <p class="portfolio-title">Главная страница</p>
 
         <div class="portfolio-image">
-            <img src="./images/SVDetailing/pic1.jpg" alt="Главная страница">
+            <img src="{$_modx->resource.project_img_main}" alt="Главная страница">
         </div>
 
         <p class="portfolio-title">Внутренние страницы</p>
+        {foreach $_modx->resource.project_imgs|fromJSON as $project}
+            <div class="contacts__content">
+                <div class="portfolio-image">
+                    <img src="{$project.img_title}" alt="{$project.img_descr}">
+                </div>
+            </div>
+        {/foreach}
 
-        <div class="portfolio-image">
-            <img src="./images/SVDetailing/pic2.jpg" alt="Услуги">
-        </div>
-
-        <div class="portfolio-image">
-            <img src="./images/SVDetailing/pic3.jpg" alt="О компании">
-        </div>
-
-        <div class="portfolio-image">
-            <img src="./images/SVDetailing/pic4.jpg" alt="Примеры работ">
-        </div>
     </div>
 </section>
 
