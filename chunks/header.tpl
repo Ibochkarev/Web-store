@@ -7,7 +7,7 @@
         <div class="ph-logo">
             <img width="125" src="{$template}images/SVDetailing/logo.png" alt="SVDetailing logotype">
         </div>
-        <h1 class="ph-title">SVDetailing</h1>
+        <h1 class="ph-title">{$_modx->resource.pagetitle}</h1>
     </div>
 </header>
 <!-- //Шапка -->

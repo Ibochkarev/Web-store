@@ -59,7 +59,7 @@
         <p class="portfolio-title">Внутренние страницы</p>
         {foreach $_modx->resource.project_imgs|fromJSON as $project}
             <div class="portfolio-image">
-                <img src="{$project.img_title}" alt="{$project.img_descr}">
+                <img src="{$project.img}" alt="{$project.img_descr}">
             </div>
         {/foreach}
 
