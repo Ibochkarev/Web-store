@@ -26,8 +26,9 @@
                 <div class="project-stats">
                     <p>Статистика проекта</p>
                     <ul>
-                        <li><b>4</b> внутренних страницы</li>
-                        <li><b>2</b> модальных окна</li>
+                        {foreach $_modx->resource.project_static|fromJSON as $project_s}
+                            <li><b>{$project_s.static_qual}</b> {$project_s.static_descr}</li>
+                        {/foreach}
                     </ul>
                 </div>
             </div>
@@ -57,10 +58,8 @@
 
         <p class="portfolio-title">Внутренние страницы</p>
         {foreach $_modx->resource.project_imgs|fromJSON as $project}
-            <div class="contacts__content">
-                <div class="portfolio-image">
-                    <img src="{$project.img_title}" alt="{$project.img_descr}">
-                </div>
+            <div class="portfolio-image">
+                <img src="{$project.img_title}" alt="{$project.img_descr}">
             </div>
         {/foreach}
 
