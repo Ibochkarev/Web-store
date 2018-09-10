@@ -9,6 +9,7 @@
 <!-- Контент -->
 {include 'file:chunks/header.tpl'}
 {include 'file:chunks/works_list.tpl'}
+{include 'file:chunks/about.tpl'}
 
 <section class="section sep-bg" id="prices">
     <h3 class="sectionTitle">Цены</h3>
@@ -166,7 +167,7 @@
                 </p>
 
                 <div class="download-brif">
-                    <a href='#' class="button yellow-out" download target="_blank">Скачать бриф <i></i></a>
+                    <a href='{$_modx->resource.file_brife}' class="button yellow-out" download target="_blank">Скачать бриф <i></i></a>
                 </div>
             </div>
         </div>

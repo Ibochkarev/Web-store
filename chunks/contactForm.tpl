@@ -22,7 +22,7 @@
     </div>
 
     <div class="custom-checkbox">
-        <input type="checkbox" id="dAgreement">
+        <input type="checkbox" id="af_dAgreement" >
         <label for="dAgreement">
             Отправляя форму, Вы соглашаетесь с <a href="#">политикой конифиденциальности</a>
         </label>
