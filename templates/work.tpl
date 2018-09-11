@@ -3,7 +3,7 @@
 {set $template = 'template_url'|config}
 {include 'file:chunks/head.tpl'}
 <body>
-{include 'file:chunks/menu.tpl'}
+{include 'file:chunks/menu_in.tpl'}
 
 <!-- Контент -->
 {include 'file:chunks/header.tpl'}

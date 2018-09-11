@@ -1,13 +1,12 @@
 <!doctype html>
 <html lang="ru">
 {set $template = 'template_url'|config}
-{include 'file:chunks/head.tpl'}
 
 <body>
 {include 'file:chunks/head.tpl'}
 {include 'file:chunks/menu.tpl'}
 <!-- Контент -->
-{include 'file:chunks/header.tpl'}
+{include 'file:chunks/header_home.tpl'}
 {include 'file:chunks/works_list.tpl'}
 {include 'file:chunks/about.tpl'}
 
@@ -210,6 +209,18 @@
 
             <button type="submit" class="button yellow">Отправить</button>
         </form>
+
+        {'!AjaxForm'|snippet:[
+        'hooks' => 'email,FormItSaveForm',
+        'form' => '@FILE chunks/contactForm.tpl',
+        'emailTo' => 'emailsender'|config,
+        'emailFrom' => 'emailsender'|config,
+        'emailSubject' => 'Письмо с сайта ' ~ 'site_name'|config,
+        'emailTpl' => '@FILE chunks/contactEmail.tpl',
+        'validate' => 'name:required',
+        'validationErrorMessage' => 'Вам необходимо заполнить все поля'
+        ]}
+
     </div>
 </div>
 
